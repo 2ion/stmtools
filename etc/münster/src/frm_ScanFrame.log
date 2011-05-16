@@ -1,0 +1,12 @@
+Zeile 24: Klasse SchulSTMKlassen.ScanFrameOffsetControl des Steuerelements ScanFrameOf war keine geladene Steuerelementklasse.
+Zeile 43: Klasse SchulSTMKlassen.ScanSizeControl des Steuerelements ScanSize war keine geladene Steuerelementklasse.
+Zeile 296: Klasse SchulSTMKlassen.SaveImageControl des Steuerelements SaveImage war keine geladene Steuerelementklasse.
+Zeile 30: Der Eigenschaftsname _ExtentX in ScanFrameOffset ist ungültig.
+Zeile 31: Der Eigenschaftsname _ExtentY in ScanFrameOffset ist ungültig.
+Zeile 41: Der Eigenschaftsname ScanSize in ScanFrameOffset ist ungültig.
+Zeile 49: Der Eigenschaftsname _ExtentX in ScanSize ist ungültig.
+Zeile 50: Der Eigenschaftsname _ExtentY in ScanSize ist ungültig.
+Zeile 60: Der Eigenschaftsname Value in ScanSize ist ungültig.
+Zeile 61: Der Eigenschaftsname Min in ScanSize ist ungültig.
+Zeile 302: Der Eigenschaftsname _ExtentX in SaveImage ist ungültig.
+Zeile 303: Der Eigenschaftsname _ExtentY in SaveImage ist ungültig.

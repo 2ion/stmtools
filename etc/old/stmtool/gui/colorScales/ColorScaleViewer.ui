@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ColorScaleViewerClass</class>
+ <widget class="QWidget" name="ColorScaleViewerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ColorScaleViewer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../../../../../../home/joj/stmsuite/res/guires.qrc">
+    <normaloff>:/icons/application-x-executable.svg.png</normaloff>:/icons/application-x-executable.svg.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="2">
+    <widget class="QSpinBox" name="sb_G">
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="value">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QSpinBox" name="sb_B">
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="value">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QSpinBox" name="sb_R">
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="value">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="lbl_R">
+     <property name="text">
+      <string>Red</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLabel" name="lbl_G">
+     <property name="text">
+      <string>Green</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="lbl_B">
+     <property name="text">
+      <string>Blue</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QSpinBox" name="sb_ALPHA">
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="lbl_ALPHA">
+     <property name="text">
+      <string>Alpha</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QDoubleSpinBox" name="sb_dR">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QDoubleSpinBox" name="sb_dG">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QDoubleSpinBox" name="sb_dB">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="13">
+    <widget class="QListWidget" name="listWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::InternalMove</enum>
+     </property>
+     <property name="defaultDropAction">
+      <enum>Qt::MoveAction</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="1" colspan="3">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" colspan="3">
+    <widget class="QPushButton" name="pb_wheel">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="whatsThis">
+      <string>Shows the common color selection dialog. Its definition will apply to the current selection.</string>
+     </property>
+     <property name="text">
+      <string>Chan&amp;ge color</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+D</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" colspan="2">
+    <widget class="QPushButton" name="pb_addColor">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="whatsThis">
+      <string>Adds a color to the scale.</string>
+     </property>
+     <property name="text">
+      <string>&amp;Add color</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+A</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1" colspan="3">
+    <widget class="QPushButton" name="pb_removeColor">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="whatsThis">
+      <string>Removes the selected color from the scale.</string>
+     </property>
+     <property name="text">
+      <string>&amp;Delete color</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+R</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1" colspan="3">
+    <widget class="QPushButton" name="pb_memorize">
+     <property name="whatsThis">
+      <string>Any previously memorized state of scale can be recalled later.</string>
+     </property>
+     <property name="text">
+      <string>&amp;Memorize</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+M</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1" colspan="3">
+    <widget class="QComboBox" name="cb_memory">
+     <property name="whatsThis">
+      <string>What you can recall. CTRL+Z is 'undo'.</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1" colspan="3">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1" colspan="3">
+    <widget class="QPushButton" name="pb_clear">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="whatsThis">
+      <string>Clears the scale.</string>
+     </property>
+     <property name="text">
+      <string>&amp;Clear</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+C</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_scaletools">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="whatsThis">
+        <string>Here's the interface to the methods of the mighty class ColorOperations!</string>
+       </property>
+       <property name="text">
+        <string>Toolbox</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="3">
+    <widget class="QSpinBox" name="sb_colortimes">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>How many times the hereinafter specified color will be added to the scale.</string>
+     </property>
+     <property name="suffix">
+      <string>x</string>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../../../../../../../home/joj/stmsuite/res/guires.qrc"/>
+ </resources>
+ <connections/>
+</ui>

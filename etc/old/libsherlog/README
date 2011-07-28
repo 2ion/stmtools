@@ -1,0 +1,23 @@
+sherlog - a library of logging facilities
+version 1.0
+
+(C) Copyright 2010 And Written By Jens Oliver John <jens.o.john@gmail.com>
+
+This project is licensed to the GNU GPL 2.0. You should have received a copy
+named 'GPL.txt' along with this file.
+
+README - LAST MODIFICATION: 7th of February in 2010.
+********************************************************************************
+
+(1) Compilation.
+
+sherlog has been developed using the Qt Toolkit version 4.5.2, so you need a
+compatible QT version being installed. To compile, run 'qmake sherlog.pro' first,
+then run 'make'. The program files will appear in your program directory after
+some correct compilation work.
+
+(2) Features.
+
+see 'REFERENCE.pdf' for more information.
+
+********************************************************************************

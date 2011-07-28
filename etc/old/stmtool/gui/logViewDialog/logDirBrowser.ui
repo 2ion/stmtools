@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>logDirBrowserClass</class>
+ <widget class="QWidget" name="logDirBrowserClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>408</width>
+    <height>355</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>logDirBrowser</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+    <normaloff>:/icons/folder-saved.svg.png</normaloff>:/icons/folder-saved.svg.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../../../../../../../home/joj/workspace/STM/res/guires.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>add.png</file>
+    <file>folder-saved.svg.png</file>
+    <file>application-x-executable.svg.png</file>
+    <file>document-new.svg.png</file>
+    <file>document-open.svg.png</file>
+    <file>document-save.svg.png</file>
+    <file>kchmviewer.png</file>
+    <file>kcontrol.svg.png</file>
+    <file>dialog-ok.svg.png</file>
+    <file>dialog-cancel.svg</file>
+    <file>dialog-ok.svg</file>
+    <file>application-x-executable.svg</file>
+    <file>dialog-cancel.svg.png</file>
+  </qresource>
+</RCC>

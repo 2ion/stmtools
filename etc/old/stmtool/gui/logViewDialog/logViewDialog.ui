@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>logViewDialogClass</class>
+ <widget class="QDialog" name="logViewDialogClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Log Viewer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../../../../../../home/joj/stmsuite/res/guires.qrc">
+    <normaloff>:/icons/folder-saved.svg.png</normaloff>:/icons/folder-saved.svg.png</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="btn_refresh">
+       <property name="toolTip">
+        <string>Refresh channel list.</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../../../../../home/joj/stmsuite/res/guires.qrc">
+         <normaloff>:/icons/gtk-refresh.png</normaloff>:/icons/gtk-refresh.png</iconset>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+R</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_logDirBrowser">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="toolTip">
+        <string>Browse all logs being stored in the current log directory.</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../../../../../home/joj/stmsuite/res/guires.qrc">
+         <normaloff>:/icons/document-open.svg.png</normaloff>:/icons/document-open.svg.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_print">
+       <property name="toolTip">
+        <string>Print the current log.</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../../../../../home/joj/stmsuite/res/guires.qrc">
+         <normaloff>:/icons/printer.png</normaloff>:/icons/printer.png</iconset>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+P</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_submit">
+       <property name="toolTip">
+        <string>Add a personal note to the current log channel.</string>
+       </property>
+       <property name="text">
+        <string>&amp;Annotate</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../../../../../home/joj/stmsuite/res/guires.qrc">
+         <normaloff>:/icons/add.png</normaloff>:/icons/add.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QListWidget" name="listWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" rowspan="2">
+    <widget class="QTextEdit" name="textEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="1">
+      <widget class="QLabel" name="lbl_client_data">
+       <property name="text">
+        <string>&lt;&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lbl_client">
+       <property name="text">
+        <string>Client:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QLineEdit" name="le_logfilepath">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>&lt;path to logfile&gt;</string>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../../../../../../../home/joj/stmsuite/res/guires.qrc"/>
+  <include location="../../../../../../../../home/joj/workspace/STM/res/guires.qrc"/>
+ </resources>
+ <connections/>
+</ui>

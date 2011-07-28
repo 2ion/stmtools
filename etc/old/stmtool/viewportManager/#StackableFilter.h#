@@ -1,0 +1,54 @@
+#ifndef STACKABLEFILTER_H_
+#define STACKABLEFILTER_H_
+/*!
+	\file StackableFilter.h
+	\class StackableFilter
+	\brief Interface for filters one can arrange within a FilterTable.
+
+	\enum StackableFilter::SFRequisition
+	\brief Questionaire for StackableFilter::tell().
+
+	\struct StackableFilter::SFArgument
+	\brief Holds information on an argument required by StackableFilter::filter().
+
+	SFArgument does both hold the specification and value of an argument of
+	StackableFilter::filter().<BR>
+	The specification defines the valuetype, and how it is to be obtained.
+	SFArgument can hold a input Widget for more complex user input, otherwise,
+	according to its valuetype, an input method defined by the appliction will be used.
+
+	\fn virtual int StackableFilter::filter(void *data, QList<struct SFArgument> args)
+	\brief Make the implemented filter operate on data as the arguments in args specify.
+	\todo Determine apppropriate valuetype of data.
+*/
+
+#include <QtPlugin>
+#include <QtGlobal>
+#include <QtCore/QVariant>
+#include <QtCore/QList>
+
+class StackableFilter {
+public:
+	typedef QList<struct SFArgument> SFArgList;
+	enum SFRequisition {
+		NAME = 0,
+		DESCRIPTION = 1
+	};
+	struct SFArgument {
+	  QVariant::Type type;	//!< QVariant::Invalid -> UI widget will be assumed.
+		union {
+			QWidget *Warg;		//!< If SFArgument::type == QVariant::Invalid, this should be an pointer upon an input widget.
+			QVariant *Varg;		//!< If SFargument::type != QVariant::Invalid, this should be an pointer upon an valid QVariant.
+		} value;
+	};
+
+	virtual int filter(void *data, QList<struct SFArgument> args);
+	virtual SFArgList* combine(QList<StackableFilter*> filters) = 0;
+	virtual SFArgList arguments() = 0;
+	virtual QString tell(enum SFRequisition req) = 0;
+	virtual quint32 id() = 0;
+};
+
+Q_DECLARE_INTERFACE(StackableFilter, "StackableFilterInterface")
+
+#endif /* STACKABLEFILTER_H_ */

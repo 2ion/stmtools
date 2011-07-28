@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>baseWindowClass</class>
+ <widget class="QMainWindow" name="baseWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>284</width>
+    <height>181</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>stmTool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+    <normaloff>:/icons/icon.svg</normaloff>:/icons/icon.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>284</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_stmTool">
+    <property name="title">
+     <string>&amp;stmTool</string>
+    </property>
+    <widget class="QMenu" name="menu_Devices">
+     <property name="title">
+      <string>&amp;Devices</string>
+     </property>
+     <addaction name="action_Select_device"/>
+    </widget>
+    <addaction name="action_New_window"/>
+    <addaction name="separator"/>
+    <addaction name="menu_Devices"/>
+    <addaction name="separator"/>
+    <addaction name="action_Preferences"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="action_Fullscreen"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="action_Color_scale_viewer"/>
+    <addaction name="action_Log_viewer"/>
+    <addaction name="separator"/>
+    <addaction name="action_About_stmTool"/>
+    <addaction name="action_About_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menu_sdm">
+    <property name="title">
+     <string>&amp;Database</string>
+    </property>
+    <addaction name="action_Browser"/>
+    <addaction name="separator"/>
+    <addaction name="action_Recent_ressources"/>
+    <addaction name="action_Manage_dataspaces"/>
+   </widget>
+   <addaction name="menu_stmTool"/>
+   <addaction name="menu_sdm"/>
+   <addaction name="menu_View"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <action name="action_New_window">
+   <property name="icon">
+    <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+     <normaloff>:/icons/document-new.svg.png</normaloff>:/icons/document-new.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="action_Load_RAW_data">
+   <property name="icon">
+    <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+     <normaloff>:/icons/document-open.svg.png</normaloff>:/icons/document-open.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Load RAW data</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+  <action name="action_Save_RAW_data">
+   <property name="icon">
+    <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+     <normaloff>:/icons/document-save.svg.png</normaloff>:/icons/document-save.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save RAW data</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_Select_device">
+   <property name="text">
+    <string>&amp;Select device</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
+   </property>
+  </action>
+  <action name="action_Configure_device_manager">
+   <property name="text">
+    <string>&amp;Configure device manager</string>
+   </property>
+  </action>
+  <action name="action_Configure_deviceManager">
+   <property name="text">
+    <string>&amp;Configure deviceManager</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="icon">
+    <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+     <normaloff>:/icons/dialog-cancel.svg.png</normaloff>:/icons/dialog-cancel.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Q</string>
+   </property>
+  </action>
+  <action name="action_Cascade">
+   <property name="text">
+    <string>&amp;Cascade</string>
+   </property>
+  </action>
+  <action name="action_Grid">
+   <property name="text">
+    <string>&amp;Grid</string>
+   </property>
+  </action>
+  <action name="action_Minimize_all">
+   <property name="text">
+    <string>&amp;Minimize all</string>
+   </property>
+  </action>
+  <action name="actionMa_ximize_all">
+   <property name="text">
+    <string>Ma&amp;ximize all</string>
+   </property>
+  </action>
+  <action name="action_Fullscreen">
+   <property name="text">
+    <string>Toggle &amp;fullscreen mode</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+F</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="action_stmTool_reference">
+   <property name="icon">
+    <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+     <normaloff>:/icons/kchmviewer.png</normaloff>:/icons/kchmviewer.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;stmTool reference</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_About_stmTool">
+   <property name="icon">
+    <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+     <normaloff>:/icons/application-x-executable.svg.png</normaloff>:/icons/application-x-executable.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About stmTool</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="action_About_Qt">
+   <property name="text">
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+  <action name="action_Preferences">
+   <property name="icon">
+    <iconset resource="../../../../../../../../home/joj/workspace/STM/res/guires.qrc">
+     <normaloff>:/icons/kcontrol.svg.png</normaloff>:/icons/kcontrol.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Preferences</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionLo_g_viewer">
+   <property name="text">
+    <string>Lo&amp;g viewer</string>
+   </property>
+  </action>
+  <action name="action_Log_viewer">
+   <property name="text">
+    <string>&amp;Log viewer</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="action_Open_dataspace">
+   <property name="text">
+    <string>&amp;Open dataspace</string>
+   </property>
+  </action>
+  <action name="action_file_system">
+   <property name="text">
+    <string>on &amp;Local FS</string>
+   </property>
+  </action>
+  <action name="action_Recent_ressources">
+   <property name="text">
+    <string>&amp;Recent ressources</string>
+   </property>
+  </action>
+  <action name="action_Manage_dataspaces">
+   <property name="text">
+    <string>&amp;Manage dataspaces</string>
+   </property>
+  </action>
+  <action name="action_Browser">
+   <property name="text">
+    <string>&amp;Browser</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="action_Color_scale_viewer">
+   <property name="text">
+    <string>&amp;Color scale viewer</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../../../../../../home/joj/workspace/STM/res/guires.qrc"/>
+ </resources>
+ <connections/>
+</ui>

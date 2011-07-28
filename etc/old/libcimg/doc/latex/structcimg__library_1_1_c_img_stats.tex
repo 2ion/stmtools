@@ -1,0 +1,209 @@
+\hypertarget{structcimg__library_1_1_c_img_stats}{
+\section{cimg\_\-library::CImgStats Struct Reference}
+\label{structcimg__library_1_1_c_img_stats}\index{cimg\_\-library::CImgStats@{cimg\_\-library::CImgStats}}
+}
+
+
+Class used to compute basic statistics on pixel values of a \hyperlink{structcimg__library_1_1_c_img}{CImg} image.  
+
+
+
+
+{\ttfamily \#include $<$CImg.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a7cf30aba66cdd7f9420570a81cc0fa30}{
+\hyperlink{structcimg__library_1_1_c_img_stats_a7cf30aba66cdd7f9420570a81cc0fa30}{CImgStats} ()}
+\label{structcimg__library_1_1_c_img_stats_a7cf30aba66cdd7f9420570a81cc0fa30}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a3eaed1a06b247ea1e2979ef51f840135}{
+\hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \& \hyperlink{structcimg__library_1_1_c_img_stats_a3eaed1a06b247ea1e2979ef51f840135}{assign} ()}
+\label{structcimg__library_1_1_c_img_stats_a3eaed1a06b247ea1e2979ef51f840135}
+
+\begin{DoxyCompactList}\small\item\em In-\/place version of the default constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a659670cc7b2dc415fc7df786e7950714}{
+\hyperlink{structcimg__library_1_1_c_img_stats_a659670cc7b2dc415fc7df786e7950714}{CImgStats} (const \hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \&stats)}
+\label{structcimg__library_1_1_c_img_stats_a659670cc7b2dc415fc7df786e7950714}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a3adda5c63560364de6aaf01f004c0251}{
+\hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \& \hyperlink{structcimg__library_1_1_c_img_stats_a3adda5c63560364de6aaf01f004c0251}{assign} (const \hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \&stats)}
+\label{structcimg__library_1_1_c_img_stats_a3adda5c63560364de6aaf01f004c0251}
+
+\begin{DoxyCompactList}\small\item\em In-\/place version of the copy constructor. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structcimg__library_1_1_c_img_stats_ae6f01dabd36b18ec51ae21a662b23413}{CImgStats} (const \hyperlink{structcimg__library_1_1_c_img}{CImg}$<$ T $>$ \&img, const bool compute\_\-variance=true)
+\begin{DoxyCompactList}\small\item\em Constructor that computes statistics of an input image {\ttfamily img}. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a6c9dbbce7dbb3ed31d431d980625cb65}{
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \& \hyperlink{structcimg__library_1_1_c_img_stats_a6c9dbbce7dbb3ed31d431d980625cb65}{assign} (const \hyperlink{structcimg__library_1_1_c_img}{CImg}$<$ T $>$ \&img, const bool compute\_\-variance=true)}
+\label{structcimg__library_1_1_c_img_stats_a6c9dbbce7dbb3ed31d431d980625cb65}
+
+\begin{DoxyCompactList}\small\item\em In-\/place version of the previous constructor. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structcimg__library_1_1_c_img_stats_abf1be70ffa308317d5f26f37b6e10f9c}{CImgStats} (const \hyperlink{structcimg__library_1_1_c_img_list}{CImgList}$<$ T $>$ \&list, const bool compute\_\-variance=true)
+\begin{DoxyCompactList}\small\item\em Constructor that computes statistics of an input image list {\ttfamily list}. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_aae7b9e63b900b74c8c717fce1cf0c9a5}{
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \& \hyperlink{structcimg__library_1_1_c_img_stats_aae7b9e63b900b74c8c717fce1cf0c9a5}{assign} (const \hyperlink{structcimg__library_1_1_c_img_list}{CImgList}$<$ T $>$ \&list, const bool compute\_\-variance=true)}
+\label{structcimg__library_1_1_c_img_stats_aae7b9e63b900b74c8c717fce1cf0c9a5}
+
+\begin{DoxyCompactList}\small\item\em In-\/place version of the previous constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_affe7f2dc9417956894d2b4f95e60b623}{
+\hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \& \hyperlink{structcimg__library_1_1_c_img_stats_affe7f2dc9417956894d2b4f95e60b623}{operator=} (const \hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \&stats)}
+\label{structcimg__library_1_1_c_img_stats_affe7f2dc9417956894d2b4f95e60b623}
+
+\begin{DoxyCompactList}\small\item\em Assignement operator. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a97e0642b01dff9a58e83acd1e598b3de}{
+bool \hyperlink{structcimg__library_1_1_c_img_stats_a97e0642b01dff9a58e83acd1e598b3de}{is\_\-empty} () const }
+\label{structcimg__library_1_1_c_img_stats_a97e0642b01dff9a58e83acd1e598b3de}
+
+\begin{DoxyCompactList}\small\item\em Return true if the current instance contains valid statistics. \item\end{DoxyCompactList}\item 
+const \hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} \& \hyperlink{structcimg__library_1_1_c_img_stats_a84a394e944020659edbff6f68d585bc0}{print} (const char $\ast$title=0) const 
+\begin{DoxyCompactList}\small\item\em Print the current statistics. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a2ec4816e565d420f16ed7c60a78fd2ca}{
+double \hyperlink{structcimg__library_1_1_c_img_stats_a2ec4816e565d420f16ed7c60a78fd2ca}{min}}
+\label{structcimg__library_1_1_c_img_stats_a2ec4816e565d420f16ed7c60a78fd2ca}
+
+\begin{DoxyCompactList}\small\item\em Minimum of the pixel values. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a470bed920ae26c851500ea607631581a}{
+double \hyperlink{structcimg__library_1_1_c_img_stats_a470bed920ae26c851500ea607631581a}{max}}
+\label{structcimg__library_1_1_c_img_stats_a470bed920ae26c851500ea607631581a}
+
+\begin{DoxyCompactList}\small\item\em Maximum of the pixel values. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_ac61933e9e2c8c03bac2d646677f615d0}{
+double \hyperlink{structcimg__library_1_1_c_img_stats_ac61933e9e2c8c03bac2d646677f615d0}{mean}}
+\label{structcimg__library_1_1_c_img_stats_ac61933e9e2c8c03bac2d646677f615d0}
+
+\begin{DoxyCompactList}\small\item\em Mean of the pixel values. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a4ef359f7eddf2f3484ec94ab17e2c58b}{
+double \hyperlink{structcimg__library_1_1_c_img_stats_a4ef359f7eddf2f3484ec94ab17e2c58b}{variance}}
+\label{structcimg__library_1_1_c_img_stats_a4ef359f7eddf2f3484ec94ab17e2c58b}
+
+\begin{DoxyCompactList}\small\item\em Variance of the pixel values. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_acedddd76cb46fd910cc38cde9b964fdd}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_acedddd76cb46fd910cc38cde9b964fdd}{xmin}}
+\label{structcimg__library_1_1_c_img_stats_acedddd76cb46fd910cc38cde9b964fdd}
+
+\begin{DoxyCompactList}\small\item\em X-\/coordinate of the pixel with minimum value. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_aac1ca515a4699cd326bc25bff0b332ce}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_aac1ca515a4699cd326bc25bff0b332ce}{ymin}}
+\label{structcimg__library_1_1_c_img_stats_aac1ca515a4699cd326bc25bff0b332ce}
+
+\begin{DoxyCompactList}\small\item\em Y-\/coordinate of the pixel with minimum value. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a7218b7bffd90b87182bd774e6c1b1020}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_a7218b7bffd90b87182bd774e6c1b1020}{zmin}}
+\label{structcimg__library_1_1_c_img_stats_a7218b7bffd90b87182bd774e6c1b1020}
+
+\begin{DoxyCompactList}\small\item\em Z-\/coordinate of the pixel with minimum value. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a911364d1c5e7112a71e56ba5877ed067}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_a911364d1c5e7112a71e56ba5877ed067}{vmin}}
+\label{structcimg__library_1_1_c_img_stats_a911364d1c5e7112a71e56ba5877ed067}
+
+\begin{DoxyCompactList}\small\item\em V-\/coordinate of the pixel with minimum value. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_aaf4eb227b28ce91da53d8399174a6de8}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_aaf4eb227b28ce91da53d8399174a6de8}{lmin}}
+\label{structcimg__library_1_1_c_img_stats_aaf4eb227b28ce91da53d8399174a6de8}
+
+\begin{DoxyCompactList}\small\item\em Image number (for a list) containing the minimum pixel. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a4da83f0f56ebb3992c46d49b271b15ce}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_a4da83f0f56ebb3992c46d49b271b15ce}{xmax}}
+\label{structcimg__library_1_1_c_img_stats_a4da83f0f56ebb3992c46d49b271b15ce}
+
+\begin{DoxyCompactList}\small\item\em X-\/coordinate of the pixel with maximum value. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a5e6a1e7b39bc13798bb3ef23dd17a5fa}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_a5e6a1e7b39bc13798bb3ef23dd17a5fa}{ymax}}
+\label{structcimg__library_1_1_c_img_stats_a5e6a1e7b39bc13798bb3ef23dd17a5fa}
+
+\begin{DoxyCompactList}\small\item\em Y-\/coordinate of the pixel with maximum value. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_acca3ac56991475445b68d6c6d5f252e6}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_acca3ac56991475445b68d6c6d5f252e6}{zmax}}
+\label{structcimg__library_1_1_c_img_stats_acca3ac56991475445b68d6c6d5f252e6}
+
+\begin{DoxyCompactList}\small\item\em Z-\/coordinate of the pixel with maximum value. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_ae194d7a61fecbb51c5897f9542f988ed}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_ae194d7a61fecbb51c5897f9542f988ed}{vmax}}
+\label{structcimg__library_1_1_c_img_stats_ae194d7a61fecbb51c5897f9542f988ed}
+
+\begin{DoxyCompactList}\small\item\em V-\/coordinate of the pixel with maximum value. \item\end{DoxyCompactList}\item 
+\hypertarget{structcimg__library_1_1_c_img_stats_a7bd17a1b6df26fe1c0e7ae99ce5f9dfa}{
+int \hyperlink{structcimg__library_1_1_c_img_stats_a7bd17a1b6df26fe1c0e7ae99ce5f9dfa}{lmax}}
+\label{structcimg__library_1_1_c_img_stats_a7bd17a1b6df26fe1c0e7ae99ce5f9dfa}
+
+\begin{DoxyCompactList}\small\item\em Image number (for a list) containing the maximum pixel. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to compute basic statistics on pixel values of a \hyperlink{structcimg__library_1_1_c_img}{CImg} image. Constructing a \hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} instance from an image CImg$<$T$>$ or a list CImgList$<$T$>$ will compute the minimum, maximum and average pixel values of the input object. Optionally, the variance of the pixel values can be computed. Coordinates of the pixels whose values are minimum and maximum are also stored. The example below shows how to use \hyperlink{structcimg__library_1_1_c_img_stats}{CImgStats} objects to retrieve simple statistics of an image : 
+\begin{DoxyCode}
+      const CImg<float> img("my_image.jpg");                 // Read JPEG image f
+      ile.
+      const CImgStats stats(img);                            // Compute basic sta
+      tistics on the image.
+      stats.print("My statistics");                          // Display statistic
+      s.
+      std::printf("Max-Min = %lf",stats.max-stats.min);      // Compute the diffe
+      rence between extremum values.
+\end{DoxyCode}
+
+
+Note that statistics are computed by considering the set of {\itshape scalar\/} values of the image pixels. No vector-\/valued statistics are computed. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcimg__library_1_1_c_img_stats_ae6f01dabd36b18ec51ae21a662b23413}{
+\index{cimg\_\-library::CImgStats@{cimg\_\-library::CImgStats}!CImgStats@{CImgStats}}
+\index{CImgStats@{CImgStats}!cimg_library::CImgStats@{cimg\_\-library::CImgStats}}
+\subsubsection[{CImgStats}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ cimg\_\-library::CImgStats::CImgStats (
+\begin{DoxyParamCaption}
+\item[{const {\bf CImg}$<$ T $>$ \&}]{ img, }
+\item[{const bool}]{ compute\_\-variance = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structcimg__library_1_1_c_img_stats_ae6f01dabd36b18ec51ae21a662b23413}
+
+
+Constructor that computes statistics of an input image {\ttfamily img}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em img}]The input image. \item[{\em compute\_\-variance}]If true, the {\ttfamily variance} field is computed, else it is set to 0. \end{DoxyParams}
+\hypertarget{structcimg__library_1_1_c_img_stats_abf1be70ffa308317d5f26f37b6e10f9c}{
+\index{cimg\_\-library::CImgStats@{cimg\_\-library::CImgStats}!CImgStats@{CImgStats}}
+\index{CImgStats@{CImgStats}!cimg_library::CImgStats@{cimg\_\-library::CImgStats}}
+\subsubsection[{CImgStats}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ cimg\_\-library::CImgStats::CImgStats (
+\begin{DoxyParamCaption}
+\item[{const {\bf CImgList}$<$ T $>$ \&}]{ list, }
+\item[{const bool}]{ compute\_\-variance = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structcimg__library_1_1_c_img_stats_abf1be70ffa308317d5f26f37b6e10f9c}
+
+
+Constructor that computes statistics of an input image list {\ttfamily list}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em list}]The input list of images. \item[{\em compute\_\-variance}]If true, the {\ttfamily variance} field is computed, else it is set to 0. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcimg__library_1_1_c_img_stats_a84a394e944020659edbff6f68d585bc0}{
+\index{cimg\_\-library::CImgStats@{cimg\_\-library::CImgStats}!print@{print}}
+\index{print@{print}!cimg_library::CImgStats@{cimg\_\-library::CImgStats}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf CImgStats}\& cimg\_\-library::CImgStats::print (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ title = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structcimg__library_1_1_c_img_stats_a84a394e944020659edbff6f68d585bc0}
+
+
+Print the current statistics. 
+
+Printing is done on the standart error output. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/media/mylib/kantharos/workspace/STM/libcimg/CImg.h\end{DoxyCompactItemize}
